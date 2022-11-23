@@ -16,8 +16,9 @@ export const Home = () => {
       </Tabs>
       <Grid container spacing={4}>
         <Grid xs={8} item>
-          {[...Array(5)].map(() => (
+          {[...Array(5)].map((_, key) => (
             <Post
+              key={key}
               id={1}
               title="Roast the code #1 | Rock Paper Scissors"
               imageUrl="https://res.cloudinary.com/practicaldev/image/fetch/s--UnAfrEG8--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/icohm5g0axh9wjmu4oc3.png"
